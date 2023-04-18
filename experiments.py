@@ -6,7 +6,7 @@ random.seed(42)
 
 #--- constants ---#
 
-N = 100 # number of repeated experiments 
+N = 1000 # number of repeated experiments 
 n = 10 # number of agents
 m = 12 # number of topics
 p = 15 # number of slots
@@ -175,5 +175,5 @@ if __name__ == "__main__":
     statistics = pd.DataFrame(statistics, index=["Fairness Score", "Social Welfare Score"]).T
     print(statistics)
     # plt.style.use('ggplot')
-    statistics.plot.bar(figsize=(10,6), rot=0)
+    statistics.plot.bar(figsize=(6,3), rot=0)
     plt.show()
